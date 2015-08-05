@@ -22,7 +22,7 @@ var ViewModel = function() {
 	//prefered location for search to find places
 	this.preferredLoc = ko.observable("Chesterfield, VA");
 	//prefered type of location
-	this.preferredExplore = ko.observable("pizza");
+	this.preferredExplore = ko.observable("Bar");
 	// boolean value for places list display
 	self.displayPlaces = ko.observable('true');
 
