@@ -82,7 +82,7 @@ function AppViewModel() {
 
 	var venueMarkers = [];
 	var defaultExploreKeyword = 'best nearby';
-	var defaultNeighborhood = '23234';
+	var defaultNeighborhood = 'Connecticut';
 	var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
 	self.exploreKeyword = ko.observable(''); 
