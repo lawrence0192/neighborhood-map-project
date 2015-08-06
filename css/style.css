@@ -1,139 +1,209 @@
-
+*
+.CityStateInfo{
+  color: #fff;
+  margin-top:5px;
+  font-size:14px;
+  font-weight:300;
+  width:100px;
+  background: #000;
+}
+.InputForm{
+  width: 250px;
+  color: #000;
+}
+.border{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #a9a9a9;
+    width: 250px;
+}
+.temp{
+  float: left;
+}
+.TopPage{
+  background: #000;
+  color: #fff;
+}
+.form{
+  padding-bottom: 10px;
+  width: 400px;
+  float: left;
+  margin-left: 10px;
+}
+.nyTimes{
+  padding-top:  5px;
+  background-color: #ccc;
+}
+.Pic{
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+.grey{
+  background-color: #ccc;
+}
 #map-canvas {
-	height: 100%;
-	width: 100%;
-	padding-bottom: 5%;
-	padding-right: 20%;
-	padding-left: 20%;
-	display: block;
-	overflow: auto;
+  width: 100%;
+  height: 50%;
+}
+.left{
+  float:left;
+  font-size:14px;  
+  width:110px;
+}
+.venues-listing-box{
+  overflow-x: hidden;
+  display:block;
+  margin-top:5px;
+  width:315px;
+  height: 750px;
+  background: #666;
+}
+.venues-listing-box .venue-listing-item{
+  padding: 10px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.venues-listing-box::-webkit-scrollbar {
+  width: 10px;
+  overflow: visible;
+}
+.venues-listing-box::-webkit-scrollbar-thumb {
+  background-color: #000;
+  min-height: 30px;
 }
 
-.venu-group {
-	position: absolute;
-	top: 60px;
-	display: block;
-	overflow: auto;
-	width: 350px;
-	height: 820px;
-	left: 40px;
-	z-index: 1;
-}
-.media {
-	background: #fff;
-}
-.venueInfowindow {
-	max-width: 300px;
+.venue-listing-item:visited,
+.venue-listing-item:hover,
+.venue-listing-item:active{
+  background:#fafafa;
 }
 
-.venueInfowindow .venueName {
-	font-size: 18px;
-	font-weight: 400;
+.venues-listing-box .selected-venue-item{
+  background:#fafafa;
 }
 
-.venueRating {
-	float: left;
-	clear: right;
-	background-color: #338599;
+.venue-listing-item {
+  padding-right: 5px;
+  float:left;
+  clear:left;
+padding-bottom: 10px;
 }
 
-.left-inner-addon {
-	position: relative;
-}
-.search-bar {
-	position: absolute;
-	top: 10px;
-	z-index: 1;
-	left: 40px;
-}
-.bgimg {
-	max-width: 250px !important;
-}
-.search-bar input.form-control {
-	width: 120px;
-	display: inline-block;
-	font-size: 12px;
-}
-#map-error {
-	height: 100%;
-	width: 100%;
-	padding-bottom: 5%;
-	padding-right: 20%;
-	padding-left: 40%;
-	display: block;
-	overflow: auto;
-}
-#display_list{
-	display:none;
+.venue-listing-item .content{
+  word-wrap: break-word;
+  float:left;
+  width:280px;
 }
 
-@media only screen and (max-width : 760px) {
-	#display_list{
-		display:block;
-		position: absolute;
-		top: 50px;
-		z-index: 2;
-		left: 180px;
-	}
-	.venu-group {
-		position: absolute;
-		top: 60px;
-		display: block;
-		overflow: auto;
-		width: 200px;
-		height: 80%;
-		left: 20px;
-		z-index: 1;
-		font-size: small;
-	}
-	.media {
-		width: 200px;
-		height: 100px;
-		background: #fff;
-		font-size: small !important;
-	}
-	.pull-left {
-		width: 60px;
-	}
+.venue-listing-item .left{
+  width:70%;
+  float:left;
+}
 
- 
-	
-	.search-bar {
-		position: absolute;
-		top: 5px;
-		z-index: 1;
-		left: 20px;
-	}
-	.search-bar input {
-		width: 100px;
-		display: inline-block;
-		font-size: 12px;
-	}
-	.badge {
-		font-size: 8px;
-	}
+.venue-listing-item .left .venue-name{
+  font-size: 15px;
+  font: bold;
+  line-height: 10px;
+  margin-bottom: 5px;
+}
 
-	.media-heading,.list-group-item-text {
-		font-size: 10px;
-		word-wrap: break-word;
-	}
+.venue-listing-item .left .venue-sub{
+  margin-bottom:10px;
+}
 
-	.venueInfowindow {
-		max-width: 100px;
-	}
+.venue-listing-item .left .venue-sub .venue-rating{
+  float:left;
+  font-size: 15px;
+  font-weight:300;
+  clear:right;
+}
 
-	.venueInfowindow .venueName {
-	    font-size: 10px; 
-	}
-	#map-error {
-		height: 100%;
-		width: 100%;
-		padding-top: 20%;
-		padding-right: 20%;
-		padding-left: 60%;
-		display: block;
-		overflow: auto;
-	}
-	
+.venue-listing-item .left .venue-sub .venue-address{
+  width:230px;
+  padding-left:10px;
+  float:left;
+  font-size: 12px;
+}
+
+.venue-listing-item .left .venue-category,
+.venue-listing-item .left .venue-website,
+.venue-listing-item .left .venue-review,
+.venue-listing-item .left .venue-contact{
+  font-size: 12px;
+}
+
+.venue-listing-item .Pic{
+  width:30%;
+}
+
+.venue-listing-item .Pic .featured-photo{
+  padding: 10px;
+  float:right;
+}
+.venue-infowindow{
+  font-size:16px;
+  font-weight: 400;
+  max-width: 200px;
+ margin-right:5px;
+}
+
+.venue-infowindow .venue-rating{
+  margin-left:5px;
+}
+
+
+@media only screen and (max-width : 768px) {
+
+
+  .search-button{
+    display:none;
+  }
+
+  .group{
+    margin-bottom:5px;
+  }
+
+.left{
+    display:none;
+  }
+.left{
+    font-size:20px;
+  }
+.venues-listing-box{
+    width:100%;
+  }
+
+  .venue-listing-item .left .venue-sub .venue-address{
+    width:70%;
+  }
+
+  .venue-listing-item .content{
+    word-wrap: break-word;
+    width:90%;
+  }
+
+}
+
+@media only screen and (max-width : 320px) {
+
+  .venues-listing-box{
+    max-width: 310px;
+  }
+  
+  .venue-listing-item .left{
+    width:60%;
+  }
+  .venue-listing-item .Pic{
+    width:40%;
+  }
+
+  .venue-listing-item .left .venue-sub .venue-address{
+    width:60%;
+  }
+
+  .venue-listing-item .content{
+    word-wrap: break-word;
+    width:80%;
+  }
 
 }
