@@ -82,7 +82,7 @@ function AppViewModel() {
 
 	var venueMarkers = [];
 	var defaultExploreKeyword = 'best nearby';
-	var defaultNeighborhood = 'Chesterfield, VA';
+	var defaultNeighborhood = '23234';
 	var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
 	self.exploreKeyword = ko.observable(''); 
