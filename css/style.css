@@ -32,7 +32,7 @@
 }
 .nyTimes{
   padding-top:  5px;
-  background-color: #000;
+  background-color: ##008b8b;
 }
 .Pic{
   width: 50px;
@@ -40,7 +40,7 @@
   float: right;
 }
 .grey{
-  background-color: #000;
+  background-color: ##008b8b;
 }
 #map-canvas {
   width: 100%;
