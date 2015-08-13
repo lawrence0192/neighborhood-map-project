@@ -109,7 +109,7 @@ catch(err) {
       searchBox.setBounds(bounds);
     });   
     // Handles an event where Google Maps takes too long to load
-    var timer = window.setTimeout(failedToLoad, 5000);
+    var timer = window.setTimeout(failedToLoad, 10000);
     google.maps.event.addListener(map, 'tilesloaded', function() {
       window.clearTimeout(timer);
     });
