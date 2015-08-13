@@ -1,7 +1,7 @@
 function appViewModel() {
 // Alert if Google API is inaccesible
 try {
-  var dcLoc = new google.maps.LatLng(37.5333, -77.4667);
+  var dcLoc = new google.maps.LatLng(37.5333, 77.4667);
 }
 catch(err) {
     alert("Unable to access Google API");
