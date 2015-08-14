@@ -64,12 +64,12 @@ catch(err) {
     getPlaces();
     computeCenter();       
 
-    var locations = (document.getElementById('locations'));
-    map.searchBar[google.maps.ControlPosition.RIGHT_CENTER].push(locations);
+    var list = (document.getElementById('list'));
+    map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(list);
     var input = (document.getElementById('pac-input'));
-    map.searchBar[google.maps.ControlPosition.TOP_LEFT].push(input);
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
     var title = (document.getElementById('title'));
-    map.searchBar[google.maps.ControlPosition.TOP_CENTER].push(title);
+    map.controls[google.maps.ControlPosition.TOP_CENTER].push(title);
 
     var searchBox = new google.maps.places.SearchBox((input));
     // Filters the results in the pre-populated list
@@ -109,7 +109,7 @@ catch(err) {
       searchBox.setBounds(bounds);
     });   
     // Handles an event where Google Maps takes too long to load
-    var timer = window.setTimeout(failedToLoad, 10000);
+    var timer = window.setTimeout(failedToLoad, 5000);
     google.maps.event.addListener(map, 'tilesloaded', function() {
       window.clearTimeout(timer);
     });
