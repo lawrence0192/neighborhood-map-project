@@ -14,7 +14,7 @@ catch(err) {
   var infowindow;
   var lat = '';
   var lng = '';
-  //var dcLoc = new google.maps.LatLng(38.8900, -77.0236);
+  //var dcLoc = new google.maps.LatLng(37.442126, -77.473185);
   var markersArray = [];  
   var $loc = $('#title');
 
