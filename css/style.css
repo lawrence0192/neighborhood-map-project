@@ -60,7 +60,7 @@ hr {
 	padding: 0;
 }
 
-.controls {
+.searchBar {
 	margin-top: 16px;
 	border: 1px solid transparent;
 	border-radius: 2px 0 0 2px;
@@ -71,7 +71,7 @@ hr {
 	box-shadow : 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-#list {
+#locations {
 	background-color: #fff;
 	font-family: Roboto;
 	font-size: 12px;
