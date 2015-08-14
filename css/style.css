@@ -16,7 +16,6 @@ h1 {
 	text-align: center;
 	font-family: Roboto;
 	padding: 20px;
-        color: #941600;
 }
 
 h2 {
@@ -24,7 +23,7 @@ h2 {
 	width: 100%;
 	margin-top: 0px;
 	padding-top: 10px;
-	padding-left: 7%;
+	padding-left: 2%;
 	position: fixed;
 	padding-bottom: 10px;
 	background-color: #fff;
@@ -60,7 +59,7 @@ hr {
 	padding: 0;
 }
 
-.searchBar {
+.controls {
 	margin-top: 16px;
 	border: 1px solid transparent;
 	border-radius: 2px 0 0 2px;
@@ -71,7 +70,7 @@ hr {
 	box-shadow : 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-#locations {
+#list {
 	background-color: #fff;
 	font-family: Roboto;
 	font-size: 12px;
