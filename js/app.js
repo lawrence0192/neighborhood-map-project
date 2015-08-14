@@ -64,12 +64,12 @@ catch(err) {
     getPlaces();
     computeCenter();       
 
-    var list = (document.getElementById('list'));
-    map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(list);
+    var locations = (document.getElementById('locations'));
+    map.searchBar[google.maps.ControlPosition.RIGHT_CENTER].push(locations);
     var input = (document.getElementById('pac-input'));
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+    map.searchBar[google.maps.ControlPosition.TOP_LEFT].push(input);
     var title = (document.getElementById('title'));
-    map.controls[google.maps.ControlPosition.TOP_CENTER].push(title);
+    map.searchBar[google.maps.ControlPosition.TOP_CENTER].push(title);
 
     var searchBox = new google.maps.places.SearchBox((input));
     // Filters the results in the pre-populated list
