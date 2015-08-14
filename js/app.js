@@ -1,7 +1,7 @@
 function appViewModel() {
 // Alert if Google API is inaccesible
 try {
-  var dcLoc = new google.maps.LatLng(37.442126, -77.473185);
+  var myLoc = new google.maps.LatLng(37.442126, -77.473185);
 }
 catch(err) {
     alert("Unable to access Google API");
@@ -14,7 +14,7 @@ catch(err) {
   var infowindow;
   var lat = '';
   var lng = '';
-  //var dcLoc = new google.maps.LatLng(37.442126, -77.473185);
+  //var myLoc = new google.maps.LatLng(37.442126, -77.473185);
   var markersArray = [];  
   var $loc = $('#title');
 
@@ -59,7 +59,7 @@ catch(err) {
   // Loads the map & positions the search bar & list, along with adding & removing map markers
   function initialize() {
     map = new google.maps.Map(document.getElementById('map-canvas'), {
-    center: dcLoc,    
+    center: myLoc,    
     });
     getPlaces();
     computeCenter();       
@@ -125,12 +125,12 @@ catch(err) {
 
   // Function to pre-populate the map with place types; nearbySearch returns up to 20 places
   function getPlaces() {
-    if (!dcLoc){
+    if (!myLoc){
       apiError();
     }
     else {
       var request = {
-        location: dcLoc,
+        location: myLoc,
         radius: 600,
         types: ['restaurant', 'bar', 'cafe', 'food']
       };
