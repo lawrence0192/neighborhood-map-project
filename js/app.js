@@ -183,7 +183,7 @@ catch(err) {
     });
 
     markersArray.push(marker);
-    return marker;
+    //return marker;
   }
 
   // Foursquare Credentials
