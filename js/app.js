@@ -238,7 +238,7 @@ catch(err) {
 
     for(var i = 0; i < markersArray.length; i) {      
       if(place.place_id === markersArray[i].place_id) { 
-        marker = markersArray[0];
+        marker = markersArray[i];
         break; 
       }
     } 
