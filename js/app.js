@@ -182,8 +182,8 @@ catch(err) {
       setTimeout(function(){marker.setAnimation(null);}, 1450);
     });
 
-    //markersArray.push(marker);
-    //return marker;
+    markersArray.push(marker);
+    return marker;
   }
 
   // Foursquare Credentials
@@ -236,7 +236,7 @@ catch(err) {
   self.clickMarker = function(place) {
     var marker;
 
-    for(var i = 0; i < markersArray.length; i++) {      
+    for(var i = 0; i < markersArray.length; i) {      
       if(place.place_id === markersArray[i].place_id) { 
         marker = markersArray[i];
         break; 
