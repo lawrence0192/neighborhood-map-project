@@ -7,5 +7,5 @@ A list of these places will also be displayed on the right side of the screen, a
 map with a blue map marker.
 If you click the blue map marker, the location's name will appear in a box on the screen.  
 Also, if you click on a location in the list, the corresponding info will also appear in a box on the screen.
-In the top left corner there is a search box that will allow you to search for one of the locations in the list box or
-any location that can be found on Google Maps.
+In the top left corner there is a search box that will allow you to search for one of the locations in the list box or any location that can be found on Google Maps.
+If you type a location into the search box and hit enter, the map markers on the screen will be filtered to show only the locations you type, and not the pre-populated list.
