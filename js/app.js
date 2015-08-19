@@ -157,7 +157,7 @@ catch(err) {
   }
 
   // Function to create a marker at each place for the pre-populated list & after each search
-  function createMarker(place) {
+  //function createMarker(place) {
     var marker = new google.maps.Marker({
       map: map,
       icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
