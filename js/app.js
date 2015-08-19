@@ -182,7 +182,7 @@ catch(err) {
       setTimeout(function(){marker.setAnimation(null);}, 1450);
     });
 
-    markersArray.push(marker);
+    //markersArray.push(marker);
     //return marker;
   }
 
