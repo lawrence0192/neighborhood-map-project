@@ -157,7 +157,7 @@ catch(err) {
   }
 
   // Function to create a marker at each place for the pre-populated list & after each search
-  //function createMarker(place) {
+  function createMarker(place) {
     var marker = new google.maps.Marker({
       map: map,
       icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
@@ -185,6 +185,26 @@ catch(err) {
     markersArray.push(marker);
     return marker;
   }
+var viewModel = {
+    query: ko.observable(''),
+};
+
+viewModel.markers = ko.dependentObservable(function() {
+    var self = this;
+    var search = self.query().toLowerCase();
+    return ko.utils.arrayFilter(markers, function(marker) {
+    if (marker.title.toLowerCase().indexOf(search) >= 0) {
+            marker.boolTest = true;
+            return marker.visible(true);
+        } else {
+            marker.boolTest = false;
+            showMarkers();
+            return marker.visible(false);
+        }
+    });
+}, viewModel);
+
+ko.applyBindings(viewModel);
 
   // Foursquare Credentials
   var clientID = 'UVSLUM00CXLUB1P0UKPJSLDTG0VVYQ2E20W1C045PBU1OJNZ';
