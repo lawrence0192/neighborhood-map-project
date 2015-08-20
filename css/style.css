@@ -86,7 +86,7 @@ hr {
 	#pac-input {
 		width: 90%;
 	}
-	#pac-input: focus {
+	#pac-input:focus {
 		width:90%;
 	}
 }
