@@ -16,6 +16,7 @@ h1 {
 	text-align: center;
 	font-family: Roboto;
 	padding: 20px;
+	color: #800020;
 }
 
 h2 {
@@ -23,7 +24,7 @@ h2 {
 	width: 100%;
 	margin-top: 0px;
 	padding-top: 10px;
-	padding-left: 2%;
+	padding-left: 6%;
 	position: fixed;
 	padding-bottom: 10px;
 	background-color: #fff;
