@@ -59,7 +59,7 @@ catch(err) {
   // Loads the map & positions the search bar & list, along with adding & removing map markers
   function initialize() {
     map = new google.maps.Map(document.getElementById('map-canvas'), {
-    center: dcLoc,    
+    center: myLoc,    
     });
     getPlaces();
     computeCenter();       
@@ -125,12 +125,12 @@ catch(err) {
 
   // Function to pre-populate the map with place types; nearbySearch returns up to 20 places
   function getPlaces() {
-    if (!dcLoc){
+    if (!myLoc){
       apiError();
     }
     else {
       var request = {
-        location: dcLoc,
+        location: myLoc,
         radius: 600,
         types: ['restaurant', 'bar', 'cafe', 'food']
       };
