@@ -1,7 +1,7 @@
 function appViewModel() {
 // Alert if Google API is inaccesible
 try {
-  var dcLoc = new google.maps.LatLng(37.442126, -77.473185);
+  var myLoc = new google.maps.LatLng(37.442126, -77.473185);
 }
 catch(err) {
     alert("Unable to access Google API");
@@ -14,7 +14,7 @@ catch(err) {
   var infowindow;
   var lat = '';
   var lng = '';
-  //var dcLoc = new google.maps.LatLng(37.442126, -77.473185);
+  //var myLoc = new google.maps.LatLng(37.442126, -77.473185);
   var markersArray = [];  
   var $loc = $('#title');
 
