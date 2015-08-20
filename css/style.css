@@ -87,7 +87,7 @@ hr {
 	#pac-input {
 		width: 90%;
 	}
-	#pac-input:focus {
+	#pac-input: focus {
 		width:90%;
 	}
 }
@@ -103,7 +103,7 @@ hr {
 	width: 300px;
 }
 
-#pac-input:focus {
+#pac-input: focus {
 	border-color: #4d90fe;
 	margin-left: 1px;
 	padding-left: 14px;
