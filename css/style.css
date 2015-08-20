@@ -51,7 +51,7 @@ p.address {
 	font-weight: bold;
 }
 
-li:hover {
+li: hover {
 	background-color: #09f;
 }
 
