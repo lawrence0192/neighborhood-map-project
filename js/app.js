@@ -1,7 +1,7 @@
 function appViewModel() {
 // Alert if Google API is inaccesible
 try {
-  var myLoc = new google.maps.LatLng(37.442126, -77.473185);
+  var dcLoc = new google.maps.LatLng(37.442126, -77.473185);
 }
 catch(err) {
     alert("Unable to access Google API");
@@ -14,7 +14,7 @@ catch(err) {
   var infowindow;
   var lat = '';
   var lng = '';
-  //var myLoc = new google.maps.LatLng(37.442126, -77.473185);
+  //var dcLoc = new google.maps.LatLng(37.442126, -77.473185);
   var markersArray = [];  
   var $loc = $('#title');
 
@@ -59,7 +59,7 @@ catch(err) {
   // Loads the map & positions the search bar & list, along with adding & removing map markers
   function initialize() {
     map = new google.maps.Map(document.getElementById('map-canvas'), {
-    center: myLoc,    
+    center: dcLoc,    
     });
     getPlaces();
     computeCenter();       
@@ -125,12 +125,12 @@ catch(err) {
 
   // Function to pre-populate the map with place types; nearbySearch returns up to 20 places
   function getPlaces() {
-    if (!myLoc){
+    if (!dcLoc){
       apiError();
     }
     else {
       var request = {
-        location: myLoc,
+        location: dcLoc,
         radius: 600,
         types: ['restaurant', 'bar', 'cafe', 'food']
       };
@@ -236,7 +236,7 @@ catch(err) {
   self.clickMarker = function(place) {
     var marker;
 
-    for(var i = 0; i < markersArray.length; i) {      
+    for(var i = 0; i < markersArray.length; i++) {      
       if(place.place_id === markersArray[i].place_id) { 
         marker = markersArray[i];
         break; 
